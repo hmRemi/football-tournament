@@ -89,10 +89,7 @@ public class Match {
 
                 if (team2 != null) {
                     AbstractTeam winner = this.playMatch(team1, team2);
-                    if (winner != null) {
-                        // Add the winner to the next round
-                        nextRoundTeams.add(winner);
-                    }
+                    nextRoundTeams.add(winner);
                 } else {
                     // Add the skipped team to the next round
                     nextRoundTeams.add(team1);
